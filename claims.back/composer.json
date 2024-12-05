@@ -1,0 +1,19 @@
+{
+    "name": "juan/claims",
+    "description": "Proyecto claims MVC, PHP 5.4, SASS",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./core",
+            "Middlewares\\" : "./middlewares",
+            "Controllers\\" : "./controllers",
+            "Classes\\" : "./classes",
+            "Model\\" : "./models"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6",
+        "firebase/php-jwt": "^6.10"
+    }
+}
