@@ -13,11 +13,11 @@ const App = () => {
         <div className='app'>
             <Navbar />
             <main>
-                <HomePage />
+                {/* <HomePage /> */}
                 <ProductsPage />
-                <SingleProductPage />
-                <CartPage />
-                <MyOrderPage />
+                {/* <SingleProductPage /> */}
+                {/* <CartPage /> */}
+                {/* <MyOrderPage /> */}
             </main>
         </div>
     );

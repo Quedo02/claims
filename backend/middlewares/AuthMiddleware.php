@@ -30,8 +30,6 @@ class AuthMiddleware
                 $_SESSION['first_name'] = $userData['first_name'];
                 $_SESSION['mail'] = $userData['mail'];
                 $_SESSION['login'] = $userData['login'];
-                $_SESSION['team'] = $userData['team'];
-                $_SESSION['rol'] = $userData['rol']; // aqui x2
 
                 if ($isAuthenticated) {
                     $next(); // User is authenticated, proceed

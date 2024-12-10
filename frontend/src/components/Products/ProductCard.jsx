@@ -5,7 +5,7 @@ import iphone from "../../assets/Images/iphone.jpg";
 import star from "../../assets/Images/white-star.png";
 import basket from "../../assets/Images/basket.png";
 
-const ProductCard = () => {
+const ProductCard = ({name, price, id}) => {
     return (
         <article className='product_card'>
             <div className='product_image'>
@@ -15,8 +15,8 @@ const ProductCard = () => {
             </div>
 
             <div className='product_details'>
-                <h3 className='product_price'>$1,499.00</h3>
-                <p className='product_title'>Curso lobosimulador- Medio superior</p>
+                <h3 className='product_price'>${price}</h3>
+                <p className='product_title'>{name}</p>
 
                 <footer className='align_center product_info_footer'>
                     <div className='align_center'>

@@ -3,7 +3,7 @@ import React from "react";
 import "../../assets/Styles/ProductsList.css";
 import ProductCard from "./ProductCard";
 
-const ProductsList = () => {
+const ProductsList = ({products}) => {
     return (
         <section className='products_list_section'>
             <header className='align_center products_list_header'>
@@ -18,10 +18,14 @@ const ProductsList = () => {
             </header>
 
             <div className='products_list'>
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
+                {products.map((product) => (
+                    <ProductCard
+                        key={product.id_simulador} // Esto es para React
+                        id={product.id_simulador}  // Pasa el ID como prop
+                        name={product.simulador}  // Pasa el nombre como prop
+                        price={product.precio}    // Pasa el precio como prop
+                    />
+                ))}
             </div>
         </section>
     );
